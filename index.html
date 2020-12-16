@@ -17,16 +17,22 @@
 <body>
     <div class="wrapper">
         <div class="left-col">
-            <img src="assets/img/logo.png" class="logo">
+            <button type="button" class="buttonlist">-</button>
             <div class="content">
                 <h1>Hi Samantha</h1>
                 <p>Welcome back to workspace, we missed You!</p>
                 <form>
                     <input type="text" name="search" placeholder="Search task or project..">
                 </form>
+                <h2>Projects (13)</h2>
+
                 <button type="button" class="buttongh">GH</button>
                 <button type="button" class="buttoncp">CP</button>
                 <button type="button" class="buttonec">EC</button>
+                <br>
+                <button type="button" class="buttonta">TA</button>
+                <button type="button" class="buttonlp">LP</button>
+                <button type="button" class="buttonplus">8+</button>
             </div>
         </div>
         <div class="right-col">
@@ -42,17 +48,26 @@
                 </p>
                 <br>
                 <h3>Today</h3>
-
-                <!-- <div class="controller">
-                    <img src="assets/img/back.png" alt="">
+                <p id="show"></p>
+                <!-- <div class="controller"> -->
+                <!-- <img src="assets/img/back.png" alt="">
                     <div class="vertical-line">
-                    </div>
-                    <img src="assets/img/next.png" alt="">
-                </div> -->
+                    </div> -->
+                <button type="button" class="buttontambah" onclick="myFunction()">+</button>
+                <!-- </div> -->
             </div>
         </div>
     </div>
 
+    <script>
+        function myFunction() {
+            let i = 1;
+            for (i = 1; i <= 6; i++) {
+                document.getElementById("show").innerHTML = "Create Initial Layout From Homepage";
+                i++;
+            }
+        }
+    </script>
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
